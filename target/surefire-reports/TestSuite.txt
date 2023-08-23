@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.543 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.901 s <<< FAILURE! - in TestSuite
+searchTest(tests.ui.SearchTest)  Time elapsed: 16.935 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : İniş İstasyonunu Kontrol Ediniz!}
+  (Session info: chrome=116.0.5845.110): İniş İstasyonunu Kontrol Ediniz!
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'huseyins-air', ip: 'fe80:0:0:0:f2:ca36:ee6:bbb0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e803d8f40bda320382d506fefa0bf2, findElements {using=xpath, value=//*[text()="11:04"]/ancestor::tr/td[5]/child::*/child::label}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/gg/19r_p5mx7vg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57383/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e803d8f40bda320382d506fefa0bf2
+	at tests.ui.SearchTest.searchTest(SearchTest.java:20)
+

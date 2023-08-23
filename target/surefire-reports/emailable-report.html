@@ -9,10 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">UISuite</th></tr>
-<tr><td><a href="#t0">YHT Search Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,393</td><td></td><td></td></tr>
+<tr><td><a href="#t0">YHT Search Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,363</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UISuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">YHT Search Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ui.SearchTest</td><td><a href="#m0">searchTest</a></td><td rowspan="1">1661802430439</td><td rowspan="1">8532</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UISuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">YHT Search Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ui.SearchTest</td><td><a href="#m0">searchTest</a></td><td rowspan="1">1692814978892</td><td rowspan="1">16917</td></tr></tbody>
 </table>
-<h2>YHT Search Test</h2><h3 id="m0">tests.ui.SearchTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.ui.SearchTest.searchTest(java.lang.reflect.Method)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>YHT Search Test</h2><h3 id="m0">tests.ui.SearchTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.ui.SearchTest.searchTest(java.lang.reflect.Method)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : İniş İstasyonunu Kontrol Ediniz!}
+  (Session info: chrome=116.0.5845.110): İniş İstasyonunu Kontrol Ediniz!
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;huseyins-air&apos;, ip: &apos;fe80:0:0:0:f2:ca36:ee6:bbb0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.0.1&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e803d8f40bda320382d506fefa0bf2, findElements {using=xpath, value=//*[text()=&quot;11:04&quot;]/ancestor::tr/td[5]/child::*/child::label}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/gg/19r_p5mx7vg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57383/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e803d8f40bda320382d506fefa0bf2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:224)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:221)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at base.BasePage.waitVisibility(BasePage.java:24)
+	at base.BasePage.getText(BasePage.java:41)
+	at pages.HomePage.checkSeatBiggerThan2(HomePage.java:76)
+	at pages.HomePage.search(HomePage.java:63)
+	at tests.ui.SearchTest.searchTest(SearchTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -24,7 +24,7 @@ public class HomePage extends BasePage {
     By toBy = By.id("nereye");
     By dateBy = By.id("trCalGid_input");
     By searchButtonBy = By.id("btnSeferSorgula");
-    By date27By = By.xpath("//*[text()=\"30\"]");
+    By date27By = By.xpath("//*[text()=\"31\"]");
 
 
 

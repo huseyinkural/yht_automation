@@ -34,12 +34,13 @@ public class BaseTest {
             default:
                 System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--disable-notifications");
-                options.addArguments("--headless");
+                //options.addArguments("--disable-notifications");
+                //options.addArguments("--headless");
+                options.addArguments("--remote-allow-origins=*");
 
-                //driver = new ChromeDriver(options);
+                driver = new ChromeDriver(options);
 
-                driver = new ChromeDriver();
+                //driver = new ChromeDriver();
                 driver.manage().window().maximize();
                 break;
 

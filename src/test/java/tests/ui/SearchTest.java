@@ -17,7 +17,7 @@ public class SearchTest extends BaseTest {
         HomePage homePage = new HomePage(driver);
         homePage
                 .goToHomePage()
-                .search("ERYAMAN YHT","İstanbul(Söğütlü Ç.)","31.08.2023");
+                .search("ERYAMAN YHT","İstanbul(Söğütlüçeşme)","31.08.2023");
 
 
     }
